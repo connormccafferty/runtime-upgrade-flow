@@ -11,8 +11,8 @@ This example demonstrates how to leverage search params to download a newer runt
 
 ### How to use this:
 
--   Clone this repository: `git clone https://github.com/HadoukenIO/app-template`
--   Install the dependencies: `cd app-template` & `npm install`
+-   Clone this repository: `git clone https://github.com/connormccafferty/runtime-upgrade-flow`
+-   Install the dependencies: `cd runtime-upgrade-flow` & `npm install`
 -   Start the assets server where the assets will be served: `npm run start:assets-server`
 -   Start the express server where the various manifest's are hosted: `npm run start:server`
 -   Start the live-server and launch the application on it's current version: `npm start`
