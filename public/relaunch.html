@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>relaunch</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body>
+        <h1>Re-launch App</h1>
+    </body>
+    <script>
+        if (typeof fin !== "undefined") {
+            const app = fin.Application.getCurrentSync();
+
+            // timeout to ensure previous version of app has closed
+            setTimeout(async () => {
+                const version = await fin.System.getVersion();
+                fin.Application.startFromManifest(
+                    `http://localhost:9000/manifest?version=${version}`
+                )
+                    .then(async () => {
+                        await app.quit();
+                    })
+                    .catch(console.error);
+            }, 3000);
+        }
+    </script>
+</html>

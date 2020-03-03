@@ -8,13 +8,22 @@
         "saveWindowState": true
     },
     "runtime": {
-        "arguments": "",
-        "version": "stable"
+        "arguments": "--disable-web-security",
+        "version": "12.69.43.22"
     },
-    "shortcut": {
-        "company": "OpenFin",
-        "description": "Openfin POC",
-        "icon": "http://localhost:5555/favicon.ico",
-        "name": "Openfin POC"
-    }
+    "appAssets": [
+        {
+            "src": "http://localhost:8888/Basic.zip",
+            "alias": "hyperblotter-chart",
+            "target": "HyperblotterChart.exe",
+            "version": "1.0.0"
+        },
+        {
+            "src": "http://localhost:8888/Advanced.zip",
+            "alias": "hyperblotter-chart2",
+            "target": "HyperblotterChart.exe",
+            "version": "1.0.0"
+        }
+    ],
+    "shortcut": {}
 }

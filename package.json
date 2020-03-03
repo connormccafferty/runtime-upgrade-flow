@@ -1,10 +1,15 @@
 {
-  "name": "openfin-template",
-  "version": "0.0.0",
-  "devDependencies": {
-    "@types/openfin": "latest",
-    "hadouken-js-adapter": "latest",
-    "live-server": "latest"
-  },
-  "license": "Apache-2.0"
+    "name": "openfin-template",
+    "version": "0.0.0",
+    "scripts": {
+        "start:server": "node server/index",
+        "start:assets-server": "cd public && npx http-server -a localhost -p 8888 -c-1"
+    },
+    "devDependencies": {
+        "@types/openfin": "latest",
+        "express": "^4.17.1",
+        "hadouken-js-adapter": "latest",
+        "live-server": "latest"
+    },
+    "license": "Apache-2.0"
 }
