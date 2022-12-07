@@ -7,7 +7,7 @@
     },
     "devDependencies": {
         "@types/openfin": "latest",
-        "express": "^4.17.1",
+        "express": "^4.18.2",
         "hadouken-js-adapter": "latest",
         "live-server": "latest"
     },
